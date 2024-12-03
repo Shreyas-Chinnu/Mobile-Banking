@@ -1,0 +1,240 @@
+<!-- <meta name="description" content="MobiBank - Your trusted partner in banking, loans, and 24/7 support. Manage accounts and finances seamlessly.">
+<meta name="keywords" content="Banking, Loans, Customer Support, MobiBank, Online Banking">
+<meta name="author" content="Your Name">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobiBank - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MobiBank</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="login-btn">Login</button>
+    </header>
+    <section class="login">
+        <div class="login-container">
+            <h2>Login to MobiBank</h2>
+            <form action="#">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="login.html">Sign Up</a></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 MobiBank | Shreyas M | @All rights reserved.</p>
+    </footer>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MobiBank</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: #2575fc;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .form-section {
+            padding: 2rem 1.5rem;
+        }
+
+        .form-section h2 {
+            font-size: 1.8rem;
+            color: #2575fc;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #2575fc;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .checkbox {
+            font-size: 0.85rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox input {
+            margin-right: 0.5rem;
+        }
+
+        .forgot-password {
+            font-size: 0.85rem;
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .forgot-password:hover {
+            color: #6a11cb;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            color: white;
+            background: #2575fc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #6a11cb;
+        }
+
+        .signup-prompt {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .signup-prompt a {
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .signup-prompt a:hover {
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <h1>MobiBank</h1>
+            <p>Welcome Back! Access Your Account</p>
+        </div>
+        <div class="form-section">
+            <h2>Log In</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Remember Me
+                    </label>
+                    <a href="forgot.html" class="forgot-password">Forgot Password?</a>
+                </div>
+                <a href="index.html"> <button type="submit" class="login-btn">Log In</button> </a>
+            </form>
+            <p class="signup-prompt">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
